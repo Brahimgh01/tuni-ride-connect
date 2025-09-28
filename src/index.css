@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Tunisia Ride-Hailing App Design System - Inspired by Tunisian flag colors and modern mobility */
 
 @layer base {
   :root {
+    /* Core Tunisia-inspired palette */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -17,26 +16,50 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Tunisia Red - Primary brand color */
+    --primary: 0 84% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 0 84% 55%;
+    --primary-glow: 0 84% 70%;
 
+    /* Soft neutrals for secondary actions */
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
+    /* Accent colors for ride modes */
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
+    
+    /* Ride mode specific colors */
+    --taxi-color: 45 100% 51%; /* Taxi yellow */
+    --economy-color: 142 71% 45%; /* Economy green */
+    --xl-color: 271 81% 56%; /* XL purple */
+    --moto-color: 24 100% 50%; /* Moto orange */
+    --delivery-color: 217 91% 60%; /* Delivery blue */
+    --shared-color: 142 71% 45%; /* Shared green */
 
+    /* Status colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 100% 51%;
+    --warning-foreground: 222.2 84% 4.9%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 0 84% 60%;
 
-    --radius: 0.5rem;
+    /* Design system extensions */
+    --radius: 0.75rem;
+    --shadow-elegant: 0 4px 20px -4px hsl(0 84% 60% / 0.2);
+    --shadow-glow: 0 0 30px hsl(0 84% 70% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 84% 60%), hsl(24 100% 50%));
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
